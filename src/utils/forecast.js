@@ -18,7 +18,7 @@ const forecast = (lat,long,callback)=>{
 
     else{
 
-        callback(undefined, data.daily.data[0].summary + 'its currently ' + data.currently.temperature + ' degrees out. There is a ' + data.currently.precipProbability + '% chance of rain')
+        callback(undefined, data.daily.data[0].summary + 'its currently ' + data.currently.temperature + ' degrees out.The high today is ' + body.daily.data[0].temperatureHigh + ' with a low of '+body.daily.data[0].temperatureLow + ' There is a ' + data.currently.precipProbability + '% chance of rain')
 
     }
 
