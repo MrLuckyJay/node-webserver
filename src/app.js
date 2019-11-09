@@ -8,6 +8,8 @@ const chalk = require('chalk')
 
 const hbs = require('hbs')
 
+const port = process.env.PORT || 3000 
+
 // console.log(__dirname)
 // console.log(path.join(__dirname, '../public'))
 
@@ -133,6 +135,6 @@ app.get('*',(req,res)=>{
     })
 })
 
-app.listen(3000,()=>{
-    console.log(chalk.green('Server Started Sucessfully on port 3000'))
+app.listen(port,()=>{
+    console.log(chalk.green('Server Started Sucessfully on port'+port))
 })
